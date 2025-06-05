@@ -40,8 +40,38 @@ export const About = () => {
             </div>
           </div>
         </div>
-
         </div>
+              <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-8'>
+                <div className='p-6 rounded-xl bg-white/10 border hover:-translate-y-1 transition-all'>
+                  <h3 className='text-xl font-bold mb-4'>🎓 Education</h3>
+                  <ul className='list-disc list-inside text-gray-300 space-y-2'>
+                    <li><strong>BSc in Computer Science</strong>- Periyar University(2021-2023)</li>
+                    <li><strong>MSc in Computer Science</strong>- Periyar University(2024-2026)</li>
+                  </ul>
+                </div> 
+
+                 <div className='p-6 rounded-xl bg-white/10 border hover:-translate-y-1 transition-all'>
+                  <h3 className='text-xl font-bold mb-4'>👨🏻‍💻 Work Experience</h3>
+                  <div className='space-y-4 text-gray-300'>
+                  <div>
+                    <h4 className='font-semibold'>
+                      {" "}
+                      Full Stack Developer Intern- Arttifai Tech (2025)</h4>
+                    <p>
+                      Developed a full-stack To-Do app with React, Node.js, Express, and MongoDB. Hosted the code on GitHub.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h4 className='font-semibold'>SEO Intern at APT Computer Education (2023)</h4>
+                    <p>
+                      Assisted in optimizing website content for search engines, resulting in a 30% increase in organic traffic.
+                    </p>
+                  </div>
+                  </div>
+                </div> 
+              </div>
+        
         </div>
     </section>
   )
