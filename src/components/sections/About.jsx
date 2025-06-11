@@ -1,10 +1,12 @@
 import React from 'react'
+import { RevealOnScroll } from './RevealOnScroll';
 
 export const About = () => {
   const frontendSkills = ["React", "Tailwind CSS", "JavaScript","bootstrap"];
   const backendSkills = ["Node.js", "Python", "MongoDB","AWS"];
   return (
     <section id='about' className='min-h-screen flex items-center justify-center py-20'>
+      <RevealOnScroll>
         <div className='max-w-3xl mx-auto px-4'>
             <h2 className='text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-center'>
                 {" "}
@@ -20,7 +22,7 @@ export const About = () => {
             <h3 className='text-xl font-bold mb-4'>Frontend</h3>
             <div className='flex flex-wrap gap-2'>
               {frontendSkills.map(skill => (
-                <span key={skill} className='bg-blue-500/10 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 hover:bg-blue-500/20 hover:shadow-[]'>
+                <span key={skill} className='bg-blue-500/10 rounded-full px-3 py-1 text-sm text-blue-500 hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition'>
                   {skill}
                 </span>
               ))}
@@ -32,7 +34,7 @@ export const About = () => {
             <h3 className='text-xl font-bold mb-4'>Backend</h3>
             <div className='flex flex-wrap gap-2'>
               {backendSkills.map(skill => (
-                <span key={skill} className='bg-blue-500/10 rounded-full px-3 py-1 text-sm font-semibold text-blue-500 hover:bg-blue-500/20 hover:shadow-[]'>
+                <span key={skill} className='bg-blue-500/10 rounded-full px-3 py-1 text-sm  text-blue-500 hover:bg-blue-500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.2)] transition'>
                   {skill}
                 </span>
               ))}
@@ -42,7 +44,7 @@ export const About = () => {
         </div>
         </div>
               <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-8'>
-                <div className='p-6 rounded-xl bg-white/10 border hover:-translate-y-1 transition-all'>
+                <div className='p-6 rounded-xl bg-white-500/10 border border-white/10 hover:-translate-y-1 transition-all'>
                   <h3 className='text-xl font-bold mb-4'>🎓 Education</h3>
                   <ul className='list-disc list-inside text-gray-300 space-y-2'>
                     <li><strong>BSc in Computer Science</strong>- Periyar University(2021-2023)</li>
@@ -50,7 +52,7 @@ export const About = () => {
                   </ul>
                 </div> 
 
-                 <div className='p-6 rounded-xl bg-white/10 border hover:-translate-y-1 transition-all'>
+                 <div className='p-6 rounded-xl bg-white-500/10 border border-white/10 hover:-translate-y-1 transition-all'>
                   <h3 className='text-xl font-bold mb-4'>👨🏻‍💻 Work Experience</h3>
                   <div className='space-y-4 text-gray-300'>
                   <div>
@@ -73,6 +75,7 @@ export const About = () => {
               </div>
         
         </div>
+        </RevealOnScroll>
     </section>
   )
 }
